@@ -1,0 +1,72 @@
+<li class="nav-item">
+    <!-- Button trigger modal -->
+    <a class="navbar-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        REGISTRO
+    </a>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content contenido-modal">
+                <div class="modal-header bg-green">
+                    <h1 class="modal-title fs-5 text-white" id="staticBackdropLabel">Formulario de Registro</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-register" autocomplete="off" action="Actions/insertarUsuario.php" method="POST">
+                        <input class="controls" type="text" name="Rut" id="Rut" placeholder="Ingrese su Run" pattern="[0-9]{7,8}-[0-9kK]{1}" Title="Ingrese su run, sin puntos y con guíon" required>
+                        <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese sus Nombres" pattern="[a-zA-ZñÑüÜáéíóúÁÉÍÓÚ ]{1,200}" Title="Solo puede usar letras, tildes y espacios" required>
+                        <input class="controls" type="text" name="Apellido" id="Apellido" placeholder="Ingrese sus Apellidos" pattern="[a-zA-ZñÑüÜáéíóúÁÉÍÓÚ ]{1,200}" Title="Solo puede usar letras, tildes y espacios" required>
+                        <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo" pattern="[a-z]{1,100}.[a-z]{1,100}.[0-9]{1,2}@alumnos.uda.cl" Title="Debe ingresar su correo institucional" required>
+                        <input class="controls" type="password" name="Contra" id="Contra" placeholder="Ingrese su Contraseña" pattern="[0-9a-zA-Z ]{3,50}" Title="Solo puede usar letras, números y espacios. La contraseña debe contener mínimo 5 caracteres" required>
+                        <!--Pregunta de seguridad-->
+                        <select class="controls" id="pregunta" name="pregunta" required>
+                        <option value="" disabled selected>Seleccione una pregunta de seguridad</option>
+                        <option value="¿Qué nombre(s) tiene tu padre?">¿Qué nombre(s) tiene tu padre?</option>
+                        <option value="¿Qué nombre(s) tiene tu madre?">¿Qué nombre(s) tiene tu madre?</option>
+                        <option value="¿Dónde se conocieron tus padres?">¿Dónde se conocieron tus padres?</option>
+                        <option value="¿Cuál es el nombre de tu primer mascota?">¿Cuál es el nombre de tu primer mascota?</option>
+                        <option value="¿Con quién diste tu primer beso?">¿Con quién diste tu primer beso?</option>
+                        <option value="¿Cuál es tu videojuego favorito?">¿Cuál es tu videojuego favorito?</option>
+                        <option value="¿Cuál es tu cantante favorito?">¿Cuál es tu cantante favorito?</option>
+                        <option value="¿Dónde estudiaste?">¿Dónde estudiaste?</option>
+                        <option value="¿Cómo te llamaban cuando eras niño(a)?">¿Cómo te llamaban cuando eras niño(a)?</option>
+                        <option value="¿Si tuvieras que pedir un deseo, cual sería?">¿Si tuvieras que pedir un deseo, cual sería?</option>
+                        <option value="¿Qué lugar del mundo te gustaría visitar?">¿Qué lugar del mundo te gustaría visitar?</option>
+                        <option value="¿A qué te querías dedicar cuando eras niño(a)?">¿A qué te querías dedicar cuando eras niño(a)?</option>
+                        </select>
+                        <!--Respuesta-->
+                        <input type="text" placeholder="Ingrese una respuesta" id="respuesta" name="respuesta" class="controls" required>
+                        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                        <input style="margin-left: 25%;" class="botones" type="submit" value="REGISTRAR">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="nav-item">
+    <!--MODAL LOGIN-->
+    <!-- Button trigger modal -->
+    <a class="navbar-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop_2">
+        INICIAR SESIÓN
+    </a>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop_2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content contenido-modal">
+                <div class="modal-header bg-green">
+                    <h1 class="modal-title fs-5 text-white" id="staticBackdropLabel">Inicio de sesión</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body-registro">
+                    <form class="form-register" autocomplete="off" action="Actions/validarLogin.php" method="POST">
+                        <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo" pattern="[a-z]{1,100}.[a-z]{1,100}.[0-9]{1,2}@alumnos.uda.cl" Title="Debe ingresar su correo institucional" required>
+                        <input class="controls" type="password" name="Contra" id="Contra" placeholder="Ingrese su Contraseña" pattern="[0-9a-zA-Z ]{3,50}" required>
+                        <input style="margin-left: 25%;" class="botones" type="submit" value="INICIAR SESIÓN">
+                        <p><a href="recuperarPass.php">¿Olvidaste tu contraseña?</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

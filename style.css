@@ -1,0 +1,396 @@
+.bg-green{
+    background: rgb(54,76,89);
+}
+
+.bg-orange{
+    background: rgb(219,202,19);
+}
+
+
+.banner{
+    height: 140px;
+    background-color: white;
+}
+
+.banner img{
+    position: relative;
+    margin-left: 25%;
+    margin-top: 16px;
+    height: 108px;
+}
+
+.navbar-link-active{
+    size: 14px;
+    color: rgb(255, 165, 0);
+    transition: all ease;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navbar-link-active:hover{
+    size: 14px;
+    color: rgb(255, 165, 0);
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navbar-link{
+    size: 14px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navbar-link:hover{
+    size: 14px;
+    color: rgb(255, 165, 0);
+    transition: all ease 0.3s;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.nav-size{
+    height: 64px;
+}
+
+body{
+    display: flex;
+    flex-direction: column; 
+    margin: 0;
+    min-height: 100vh;
+}
+
+footer{
+    color: white;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+footer img{
+    height: 108px;
+}
+img{
+	max-width: 100%;
+}
+.gallery{
+	
+	padding: 80px 0;
+}
+.gallery img{
+
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}
+.containerContenido{
+    margin-top: 50px;
+}
+
+.containerContenido .row{
+    margin-bottom: 30px;
+}
+
+/*--------------------------------INICIO CSS INDEX --------------------------------------*/
+.card-noticias{
+    border: solid rgb(54,76,89) 1px;
+}
+
+.card-title{
+    color: rgb(219,202,19);
+    font-weight: bold;
+}
+
+.card-body{
+    background-color: rgb(54,76,89);
+    color: #FFF;
+}
+
+.card-body a{
+    color: rgb(219,202,19);
+}
+
+.card-body-index{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tituloCards{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+}
+
+.tituloCards:hover{
+    display: block;
+}
+
+.textoCards{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
+    overflow: hidden;
+}
+
+/*.textoCards:hover{
+    display: block;
+}*/
+
+/*------------------------------ FIN CSS INDEX -------------------------------------------*/
+/*------------------------------ INICIO CSS noticias.php ----------------------------------------*/
+
+#containerContenidoNoticia{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#headNoticia{
+    border-top: solid 3px rgb(54,76,89);
+    border-left: solid 3px rgb(54,76,89);
+    border-right: solid 3px rgb(54,76,89);
+    border-radius: 10px 10px 0px 0px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#bodyNoticia{
+    border-left: solid 3px rgb(54,76,89);
+    border-right: solid 3px rgb(54,76,89);
+    border-bottom: solid 3px rgb(54,76,89);
+    border-radius: 0px 0px 10px 10px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#fechaNoticia{
+    text-align: center;
+    width: 86%;
+    margin-top: 20px;
+    margin-left: 7%;
+    padding-bottom: 25px;
+    border-bottom: solid 3px rgb(219,202,19);
+}
+
+#tituloNoticia{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contenidoNoticia{
+    text-align: justify;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#imgNoticia{
+    width: 50%;
+    margin:auto;
+	display:block;
+    margin-bottom: 50px;
+}
+
+/*------------------------------- FIN CSS noticias.php ------------------------------------------*/
+
+
+/*------------------------------- INICIO CSS forms ------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-register {
+    width: 100%;
+    padding: 30px;
+    margin: 0;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: #333;
+}
+
+.form-noModal{
+    width: 40%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+  
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.controls {
+    width: 100%;
+    background: #EEE;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: transparent;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #333;
+}
+  
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register .titulo-form {
+    font-size: 30px;
+    height: 50px;
+    color: rgb(219,202,19);
+}
+
+.form-register a {
+    color: rgb(219,202,19);
+    text-decoration: none;
+}
+  
+.form-register a:hover {
+    color: rgb(164,152,14);
+    text-decoration: underline;
+}
+  
+.botones {
+    width: 50%;
+    background: rgb(54,76,89);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.5s all ease;
+}
+
+.botones:hover{
+    background-color: rgb(39,53,63);
+}
+
+
+select:required:invalid{
+    color: gray;
+}
+
+option[value=""][disabled]{
+    display:none;
+}
+
+option{
+    color: #333;
+}
+
+/*------------------------------- FIN CSS forms ------------------------------------------*/
+
+
+/*---------------------------------------Inicio Nosotros---------------------------------------*/
+
+.card-prototipe{
+    position: relative;
+    width: 22rem;
+    height: 38rem;
+}
+
+.card-prototipe .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card-prototipe .front{
+    transform: perspective(600px) rotateY(0deg);
+    background: rgb(3, 35, 54);
+}
+
+.card-prototipe .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-prototipe .front h2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    color: azure;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.card-prototipe .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 1rem;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-prototipe .back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-prototipe .back link{
+    border-color: solid 1px azure;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.card-prototipe .back .link a{
+    color: azure;
+}
+
+.card-prototipe .back h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+
+.card-prototipe .back p{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.card-prototipe:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card-prototipe:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*---------------------------------------Fin Nosotros---------------------------------------*/
+
+/*---------------------INICIO Gestion Usuarios-----------------------*/
+
+thead tr th{
+    text-align: center;
+}
+
+tbody tr th{
+    text-align: center;
+}
+
+/*---------------------FIN Gestion Usuarios-----------------------*/
